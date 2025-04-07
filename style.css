@@ -1,1 +1,83 @@
+body {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  color: #222;
+  margin: 0;
+  background: white;
+}
+
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #f57914;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.image-and-intro img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-and-intro h1 {
+  font-size: 32px;
+  margin: 20px 0 10px;
+}
+
+.image-and-intro .highlighted {
+  font-weight: bold;
+  color: #f57914;
+  display: inline;
+}
+
+.image-and-intro .intro {
+  margin-bottom: 40px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns {
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.columns h2 {
+  font-size: 18px;
+  margin-top: 24px;
+  break-inside: avoid;
+}
+
+.columns p {
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.credit {
+  text-align: right;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+footer.page-number {
+  font-size: 12px;
+  color: #555;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  padding-top: 10px;
+}
+
+footer.page-number small em {
+  font-style: normal;
+  font-weight: bold;
+}
 
