@@ -1,65 +1,67 @@
 body {
-  font-family: Georgia, serif;
-  font-size: 16px;
+  font: 16px/1.6 'Georgia', serif;
   color: #222;
   margin: 0;
-  background: white;
+  padding: 0;
+  background: #fff;
 }
 
 #container {
   max-width: 960px;
-  margin: 0 auto;
+  margin: auto;
   padding: 40px 20px;
 }
 
 .section-label {
   text-transform: uppercase;
-  font-size: 14px;
+  font: bold 14px sans-serif;
   color: #f57914;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.image-and-intro img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-.image-and-intro h1 {
-  font-size: 32px;
-  margin: 20px 0 10px;
-}
-
-.image-and-intro .highlighted {
-  font-weight: bold;
-  color: #f57914;
-  display: inline;
-}
-
-.image-and-intro .intro {
-  margin-bottom: 40px;
+  margin: 8px 0 20px;
 }
 
 .layout {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.columns {
-  column-count: 2;
-  column-gap: 40px;
+.left-image img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
 }
 
-.columns h2 {
-  font-size: 18px;
+.article {
+  flex: 1;
+  max-width: 520px;
+}
+
+.article h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.article h2 {
+  font: bold 18px serif;
   margin-top: 24px;
-  break-inside: avoid;
 }
 
-.columns p {
+.orange {
+  color: #f47e20;
+  font-weight: bold;
+}
+
+.article p {
   margin-bottom: 18px;
-  text-align: justify;
+}
+
+.article p:first-of-type::first-letter {
+  float: left;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: bold;
+  padding-right: 8px;
 }
 
 .credit {
@@ -69,7 +71,7 @@ body {
 }
 
 footer.page-number {
-  font-size: 12px;
+  font: 12px sans-serif;
   color: #555;
   border-top: 1px solid #ccc;
   margin-top: 40px;
@@ -80,4 +82,3 @@ footer.page-number small em {
   font-style: normal;
   font-weight: bold;
 }
-
